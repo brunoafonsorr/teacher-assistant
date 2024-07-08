@@ -3,6 +3,7 @@ import styles from "./page.module.scss";
 
 import img1 from "../../public/react.svg";
 import logo from "../assets/images/logo.jpg";
+import { archivo } from "./fonts";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       </div>
 
       <div className={styles.content}>
-        <h1>Login</h1>
+        <h2>Login</h2>
         <form action="">
           <div className={styles.specifications}>
             <input type="number" placeholder="Entrar como" name="enterAs" />
@@ -28,7 +29,7 @@ export default function Home() {
             <input type="text" placeholder="Password" name="password" />
           </div>
           <span>Solicitar nova senha</span>
-          <button type="button">Login</button>
+          <button className={`${archivo.className}`} type="button">Login</button>
         </form>
       </div>
     </div>

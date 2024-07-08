@@ -13,7 +13,6 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    // background-color: #000;
     img {
       width: 100%;
       height: 100%;
@@ -25,11 +24,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // gap: 3rem;
     width: 100%;
     height: 100%;
-    // background: #ffaaff;
-    h1 {
+    h2 {
+      font-weight: 500;
+      font-size: 3rem;
+      line-height: 4.6rem;
       text-align: center;
     }
     form {
@@ -39,7 +39,6 @@
       justify-content: center;
       gap: 1rem;
       height: 60%;
-      // background: #000;
       input {
         height: 5rem;
         width: 100%;
@@ -67,13 +66,12 @@
         gap: 1rem;
         width: 100%;
         padding: 1rem;
-        // background: #b1f8ab;
       }
       span {
         margin-top: -1rem;
         width: 90%;
         text-align: end;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         // color: #ffaaff;
         &:hover {
           cursor: pointer;
@@ -81,10 +79,87 @@
       }
       button {
         margin: 3rem 0 0 0;
-        height: 4rem;
+        height: 5rem;
         width: 25rem;
         border-radius: 3rem;
-        font: 500 2.3rem Poppins;
+        font-weight: 700;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 720px;
+
+    .logo {
+      height: 50%;
+
+      img {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+
+    .content {
+      height: 100%;
+      h2 {
+        margin: 0;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 4.6rem;
+        text-align: center;
+      }
+      form {
+        height: 80%;
+        button {
+          margin: 1rem 0;
+          height: 5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 420px) {
+  .container {
+    max-height: 420px;
+
+    .logo {
+      width: 100%;
+  
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      height: 100%;
+      h2 {
+        margin-top: 2rem;
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 4.6rem;
+      }
+      form {
+        height: 100%;
+        gap: 0.2rem;
+        input {
+          height: 4rem;
+        }
+        button {
+          margin: 1rem 0 0 0 ;
+        }
       }
     }
   }
